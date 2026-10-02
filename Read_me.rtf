@@ -1,0 +1,120 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2870
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\froman\fcharset0 Times-Bold;\f2\fmodern\fcharset0 Courier;
+}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c0;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}
+{\list\listtemplateid3\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid201\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid3}
+{\list\listtemplateid4\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid301\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid4}
+{\list\listtemplateid5\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid401\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid5}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}{\listoverride\listid3\listoverridecount0\ls3}{\listoverride\listid4\listoverridecount0\ls4}{\listoverride\listid5\listoverridecount0\ls5}}
+\margl1440\margr1440\vieww27620\viewh14700\viewkind0
+\deftab720
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f0\fs36 \cf0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To generate the plots and tables in each section of the paper, please run the R scripts in the order listed below.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Appendix_A.1_code
+\f0\b0 \
+To run the simulations on a computing cluster by submitting a job:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls1\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Upload 
+\f2 Appendix_A.1_Simulation_choose_k.R
+\f0 , 
+\f2 Appendix_A.1_Simulation_choose_k.sh
+\f0 , and 
+\f2 params_v7.txt
+\f0  to the same folder.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Adjust all input and output paths to match your directory structure.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Submit the job using 
+\f2 sbatch Appendix_A.1_Simulation_choose_k.sh
+\f0 .\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To run a specific parameter combination 
+\f2 (n, p, shape, lambda, quantile_val)
+\f0  locally, use the example script 
+\f2 Appendix_A.1_run_example.R
+\f0 .\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Run 
+\f2 Appendix_A.1_visualization.R
+\f0  to generate the plots shown in Figure 8 of the paper.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Section_4.1_code
+\f0\b0 \
+To run the simulations on a computing cluster by submitting a job:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls2\ilvl0\cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Upload 
+\f2 Section4.1_simulation_studies.R
+\f0 , 
+\f2 Section4.1_simulation_studies.sh
+\f0 , and 
+\f2 param_simulation.txt
+\f0  to the same folder.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Adjust all input and output paths in 
+\f2 Section4.1_simulation_studies.R
+\f0  and 
+\f2 Section4.1_simulation_studies.sh
+\f0  to match your directory structure.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	3	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Submit the job using 
+\f2 sbatch Section4.1_simulation_studies.sh
+\f0 .\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	4	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To run a specific parameter combination 
+\f2 (n, shape)
+\f0  locally, use the example script 
+\f2 Section4.1_run_example.R
+\f0 .\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	5	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Use the simulation results to generate Table 2 of the paper.\
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Section_4.2_code
+\f0\b0 \
+For the left plot in Section 4.2 (ancestral violation rate for the river discharge data), run:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls3\ilvl0
+\f2 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section4.2_AVR_River_discharge_data.R
+\f0 \
+\ls3\ilvl0
+\f2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section4.2_AVR_River_discharge_data_result_visualize.R
+\f0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 For the right plot in Section 4.2 (pairwise causal direction identification error rate for the river discharge data), run:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls4\ilvl0
+\f2 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section4.2_pairwise_River_discharge_data.R
+\f0 \
+\ls4\ilvl0
+\f2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section4.2_pairwise_River_discharge_data_results_visualize.R
+\f0 \
+\pard\pardeftab720\sa240\partightenfactor0
+
+\f1\b \cf0 Section 4.3
+\f0\b0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \outl0\strokewidth0 For the plot in Section 4.3, \outl0\strokewidth0 \strokec2 run the following scripts in order:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240\partightenfactor0
+\ls5\ilvl0
+\f2 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	1	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section4.3_pairwise_datasets.R
+\f0 \
+\ls5\ilvl0
+\f2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	2	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Section4.3_pairwise_datasets_result_visualize.R
+\f0 \
+}
